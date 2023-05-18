@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./dist/main.css" />
+    <title>SASS</title>
+  </head>
+  <body>
+    <header>
+      <h1>Sass</h1>
+
+      <div class="menu_toggle">
+        <span class="fa fa-bars open_menu"></span>
+      </div>
+    </header>
+
+    <section>
+      <div class="menu">
+        <div class="close_menu"><span class="fa fa-close"></span></div>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <main id="home">
+      <h1>Home</h1>
+
+      <div class="para">
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur
+          assumenda veritatis exercitationem ipsa eligendi non magnam,
+          voluptatem consequuntur. Tempora nisi, tempore velit molestias saepe
+          fugit. Eius sed accusantium voluptatem expedita. Lorem ipsum dolor sit
+          amet consectetur adipisicing elit. Atque expedita, rerum molestias
+          amet assumenda maiores repudiandae voluptas, laborum similique iusto,
+          ullam suscipit incidunt doloribus? Magnam, libero! Adipisci debitis,
+          beatae aut voluptatem minima sint, laboriosam accusamus ut laudantium
+          corporis dolores harum, dignissimos iste consequatur eveniet nam
+          facere quaerat impedit. Pariatur, neque. Lorem ipsum dolor, sit amet
+          consectetur adipisicing elit. Doloribus itaque ratione expedita
+          eveniet iusto voluptas repellat iure, maxime earum quia modi, iste
+          voluptatibus a blanditiis ea totam reiciendis harum esse!
+        </p>
+      </div>
+
+      <div class="para">
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur
+          assumenda veritatis exercitationem ipsa eligendi non magnam,
+          voluptatem consequuntur. Tempora nisi, tempore velit molestias saepe
+          fugit. Eius sed accusantium voluptatem expedita. Lorem ipsum dolor sit
+          amet consectetur adipisicing elit. Atque expedita, rerum molestias
+          amet assumenda maiores repudiandae voluptas, laborum similique iusto,
+          ullam suscipit incidunt doloribus? Magnam, libero! Adipisci debitis,
+          beatae aut voluptatem minima sint, laboriosam accusamus ut laudantium
+          corporis dolores harum, dignissimos iste consequatur eveniet nam
+          facere quaerat impedit. Pariatur, neque. Lorem ipsum dolor, sit amet
+          consectetur adipisicing elit. Doloribus itaque ratione expedita
+          eveniet iusto voluptas repellat iure, maxime earum quia modi, iste
+          voluptatibus a blanditiis ea totam reiciendis harum esse!
+        </p>
+      </div>
+    </main>
+
+    <section id="about">
+      <div>
+        <h1>About</h1>
+      </div>
+
+      <div class="second-para">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eos,
+          quia velit, laudantium ullam voluptas, sit deleniti sequi aliquid
+          ratione culpa. Est eligendi expedita repudiandae molestias.
+          Necessitatibus ducimus inventore nostrum laudantium suscipit
+          architecto explicabo eos corporis animi ex vel libero nesciunt,
+          perspiciatis nemo iste commodi obcaecati labore voluptates atque quam
+          odio rerum quasi. Beatae neque sunt veritatis quaerat voluptatem iusto
+          aliquid accusamus rerum laboriosam cupiditate, consectetur nulla
+          necessitatibus earum vitae rem in, sapiente deserunt corrupti nihil
+          quae ullam fugiat error. Velit perspiciatis quasi quam ad nemo porro,
+          provident nihil tempora eligendi illo dolorem unde distinctio numquam
+          saepe laudantium aspernatur quidem?
+        </p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div>
+        <h1>Contact</h1>
+      </div>
+
+      <div class="form-section">
+        <form>
+          <div class="form-field">
+            <label for="name">Name:</label>
+            <input type="text" name="name" />
+          </div>
+
+          <div class="form-field">
+            <label for="email">Email:</label>
+            <input type="email" name="email" />
+          </div>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".menu_toggle").click(function () {
+          $("body").addClass("active");
+        });
+        $(".close_menu").click(function () {
+          $("body").removeClass("active");
+        });
+      });
+    </script>
+  </body>
+</html>

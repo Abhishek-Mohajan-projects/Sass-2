@@ -1,0 +1,62 @@
+@use "./index";
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 9rem;
+  font-family: Georgia;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: black;
+}
+
+html::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+html::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #fff;
+}
+
+header {
+  background-color: index.$header_background;
+  padding: 20px 40px;
+  color: index.$header_color;
+  display: flex;
+  height: 5rem;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  margin-top: 0.9rem;
+  color: white;
+}
+
+header {
+  border-bottom: 1px solid white;
+}
+
+header h1 {
+  max-width: 780px;
+}
+
+main {
+  padding: 1rem;
+  margin-top: 6rem;
+}
